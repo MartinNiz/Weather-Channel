@@ -1,5 +1,4 @@
-
-$('button').on('click', function () {
+function cargarCiudad() {
     let ciudad = document.querySelector("input").value;
 
     if (ciudad == '') {
@@ -18,4 +17,5 @@ $('button').on('click', function () {
         document.querySelector("input").value = ''
     }
 
-})
+}
+document.querySelector('button').addEventListener('click', cargarCiudad)
